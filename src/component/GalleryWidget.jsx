@@ -72,7 +72,7 @@ const GalleryWidget = () => {
     <div className="w-full bg-gray-800 md:px-2 lg:px-5 xl:px-12 pt-2 pb-8 rounded-2xl text-white">
         <GoQuestion className="text-xl relative top-10" />
         <TfiWidgetized className="text-xl relative top-32" />
-      <div className="flex justify-between items-center mb-4 mx-7">
+      <div className="flex justify-between items-center mb-4 mx-7 xl:mx-10">
         {/* Gallery Button */}
         <button className="bg-black text-white md:px-4 md:py-2 xl:px-8 xl:py-4 rounded-xl text-lg">
           Gallery
@@ -118,7 +118,7 @@ const GalleryWidget = () => {
       </div>
 
       {/* Gallery Images */}
-      <div className="flex items-center justify-between mx-6 space-x-4 overflow-x-auto">
+      <div className="flex items-center justify-between  mx-7 xl:mx-10 space-x-4 overflow-x-auto">
         {paginatedImages.map((image) => (
           <img
             key={image.id}
