@@ -49,15 +49,15 @@ const GalleryWidget = () => {
   // Adjust images per page based on screen size
   const updateImagesPerPage = () => {
     if (window.innerWidth >= 1024) {
-      setImagesPerPage(3); // Show 3 images on large screens
+      setImagesPerPage(3);
     } else {
-      setImagesPerPage(2); // Show 2 images on smaller screens
+      setImagesPerPage(2);
     }
   };
 
   // Add event listener to handle window resize
   useEffect(() => {
-    updateImagesPerPage(); // Update initially based on the current window size
+    updateImagesPerPage();
     window.addEventListener("resize", updateImagesPerPage);
     return () => window.removeEventListener("resize", updateImagesPerPage);
   }, []);
